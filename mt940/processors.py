@@ -140,7 +140,7 @@ def _parse_mt940_details(detail_str):
             result[key32] = (result[key32] or '') + value
         elif key.startswith('2'):
             key20 = DETAIL_KEYS['20']
-            result[key20] = (result[key20] or '') + value
+            result[key20] = (result[key20] or '') + value + '\n'
     return result
 
 
